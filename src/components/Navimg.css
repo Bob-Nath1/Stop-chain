@@ -1,0 +1,54 @@
+.nav-container{
+  z-index: 3;
+  pointer-events: none;
+}
+
+nav img {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  place-items: center;
+  position: relative;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 7;
+}
+
+.navimg img {
+  width: 40%;
+  height: 100%;
+  object-fit: contain;
+  transform: translate(42rem, -9rem);
+  padding: 0;
+  margin: 0;
+  pointer-events: none;
+}
+
+/* ... existing styles ... */
+
+/* Media queries for responsive design */
+
+/* For large screens (desktops) */
+/* @media only screen and (min-width: 75rem) {
+ 
+  .design-client {
+    height: 56.25rem;
+    margin-right: -12.3125rem;
+    margin-top: -36.25rem;
+  }
+  .watermark {
+    font-size: 12.5rem;
+    transform: translate(25%, 210%);
+  }
+  .adv {
+    transform: translate(-7%, 350%);
+  }
+} */
+
+/* For medium screens (tablets) */
