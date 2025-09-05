@@ -22,17 +22,17 @@ const Navbar = () => {
   return (
     <header className="grid grid-cols-[13.75rem_3fr_0.8fr] items-center w-[75rem] transform translate-y-4 relative z-[1] lg:-mt-5 xl:-ml-37">
       {/* Logo */}
-      <div className="flex justify-center items-center -mt-48 ml-6">
+      <div className="flex justify-center items-center -mt-48 sm:ml-6">
         <img
           src="/logo.png"
           alt="logo-co"
-          className="mt-47 h-7 -mr-6 md:mt-35 lg:mt-54  lg:h-8 lg:mt-7 lg:-ml-8 xl:ml-60 h-10 "
+          className=" w-44 mt-47 sm:h-10 sm:w-82 sm:mr-7 md:mt-35 lg:mt-54  lg:h-8 lg:mt-7 lg:-ml-8 xl:ml-60 h-10 "
           
         />
     </div>
 
       <nav>
-        <div onClick={handleMenuClick} className='h-13 w-13  mt-4 ml-90 border border-black flex items-center justify-center md:hidden'>
+        <div onClick={handleMenuClick} className='h-13 w-13  sm:mt-4  ml-12 sm:ml-90 border border-black flex items-center justify-center md:hidden'>
       {!isOpen ? <MdMenu size={45}/> : <IoMdClose size={45}/>}
       </div> 
       
@@ -125,8 +125,8 @@ const Navbar = () => {
               </p>
             </div>
 
-            <div className="flex items-center justify-center cursor-pointer hover:bg-[#051753] hover:text-white transition-colors duration-300 hidden xl:flex ml-9">
-              <SearchIcon />
+            <div className="bg-amber-50 flex items-center justify-center cursor-pointer hover:bg-blue-800  transition-colors duration-300 hidden xl:w-15 xl:h-14 xl:flex ml-9 text-black hover:text-white">
+              <SearchIcon className="" />
             </div>
           </div>
 

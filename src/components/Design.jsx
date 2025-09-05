@@ -8,31 +8,38 @@ function Design() {
 
   
   const settings = {
-    className: "center",
-    infinite: true,
-    centerPadding: "20px",
-    slidesToShow: 4, // Default: 4 slides
-    swipeToSlide: true,
-    afterChange: function (index) {
-      console.log(
-        `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
-      );
-    },
-    responsive: [
-      {
-      breakpoint: 1024, // xl screens and below
+  className: "center",
+  infinite: true,
+  centerPadding: "20px",
+  slidesToShow: 4, // Default: 4 slides (large screens)
+  swipeToSlide: true,
+  afterChange: function (index) {
+    console.log(
+      `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
+    );
+  },
+  responsive: [
+    {
+      breakpoint: 1024, // <=1024px
       settings: {
         slidesToShow: 3,
       },
     },
     {
-      breakpoint: 640, // lg and below
+      breakpoint: 640, // <=640px
       settings: {
         slidesToShow: 2,
       },
     },
-    ],
-  };
+    {
+      breakpoint: 511, // <=425px
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+};
+
 
   return (
     <div className=" ml-9 w-full lg:mt-55">
